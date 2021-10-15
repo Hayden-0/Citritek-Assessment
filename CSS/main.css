@@ -1,0 +1,332 @@
+body {
+  font-family: "Poppins", sans-serif;
+}
+
+.nav-container {
+  max-width: 90%;
+  margin: 0 auto;
+  position: relative;
+}
+
+.nav-container-hamburger {
+  max-width: 90%;
+  margin: 0 auto;
+}
+
+.nav-header {
+  display: flex;
+  justify-content: flex-end;
+  padding: 2em 0;
+}
+
+.hamburger {
+  display: block;
+  height: -moz-max-content;
+  height: fit-content;
+  width: 40px;
+  filter: invert(100%) sepia(85%) saturate(0%) hue-rotate(238deg) brightness(111%) contrast(100%);
+  cursor: pointer;
+}
+
+.hamburger-hide {
+  display: none;
+}
+
+.close {
+  height: -moz-max-content;
+  height: fit-content;
+  width: 40px;
+  cursor: pointer;
+  display: none;
+}
+
+.close-active {
+  display: block;
+  padding: 2em 0;
+}
+
+.close-header {
+  display: flex;
+  justify-content: flex-end;
+}
+
+.nav-unactive {
+  display: none;
+}
+
+.nav-active {
+  display: block;
+  background-color: #fff;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100vh;
+  z-index: 2;
+  overflow: scroll;
+}
+
+.nav-item {
+  padding: 1em 0;
+  display: grid;
+  place-items: center;
+}
+
+.nav-link {
+  display: block;
+  font-size: 1.5rem;
+  font-weight: 300;
+  text-align: center;
+  white-space: normal;
+}
+
+.cit-video-wrap {
+  background-image: url("https://i.imgur.com/Q0JQWs2.png");
+  height: 50vh;
+  background-size: cover;
+  background-position: center;
+}
+
+.cit-video-wrap-active {
+  height: unset;
+  background-color: #fff;
+}
+
+@media (min-width: 750px) {
+  .nav-link {
+    font-size: 3rem;
+  }
+}
+.bg-1 {
+  background-image: url("https://i.imgur.com/deayz87.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.section-container {
+  max-width: 90%;
+  margin: 0 auto;
+  padding: 5em 0 8em 0;
+}
+
+.section-title {
+  opacity: 0.8;
+  position: relative;
+  font-weight: 500;
+  font-size: 1.6rem;
+}
+
+.section-title::after {
+  content: "";
+  width: 70px;
+  height: 5px;
+  background-color: #DA6F1A;
+  position: absolute;
+  left: 0;
+  top: 85px;
+}
+
+@media (min-width: 460px) {
+  .section-title::after {
+    top: 50px;
+  }
+}
+.section-p {
+  margin: 2em 0;
+  font-weight: 300;
+  opacity: 0.7;
+}
+
+.orange-btn {
+  display: block;
+  width: -moz-fit-content;
+  width: fit-content;
+  padding: 1.25em 2em;
+  background-color: #DA6F1A;
+  color: #fff;
+}
+
+.orange-btn:hover {
+  opacity: 0.8;
+}
+
+.img-1-div {
+  margin-top: 1.5em;
+}
+
+.graph-img {
+  max-width: 100%;
+  height: auto;
+  filter: grayscale(100%);
+}
+
+.graph-img:hover {
+  filter: grayscale(0%);
+}
+
+@media (min-width: 768px) {
+  .section-one-flex {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .section-image-flex {
+    display: flex;
+  }
+
+  .section-one-content-wrap {
+    max-width: 50%;
+  }
+
+  .img-1-div {
+    margin-top: 3em;
+    max-width: 50%;
+  }
+}
+@media (min-width: 1400px) {
+  .section-container {
+    padding: 8em 0 8em 0;
+  }
+
+  .img-1-div {
+    margin-top: 1em;
+  }
+}
+.section-two-container {
+  max-width: 90%;
+  margin: 0 auto;
+  padding: 2em 0 4em 0;
+}
+
+.bg-2 {
+  background-image: url("https://i.imgur.com/TZF8MEZ.jpg");
+  background-size: cover;
+}
+
+.section-white-title {
+  white-space: pre-wrap;
+  font-size: 1.9rem;
+  font-weight: 500;
+  color: #fff;
+}
+
+.grid-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  place-items: center;
+  gap: 50px;
+  margin-top: 4em;
+}
+
+.item-div {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.orange-icons {
+  font-size: 2rem;
+  color: #DA6F1A;
+  width: -moz-max-content;
+}
+
+.numbers {
+  font-size: 2.5rem;
+  color: #fff;
+}
+
+.lower-text {
+  color: #fff;
+  font-size: 0.8rem;
+}
+
+@media (min-width: 760px) {
+  .section-two-container {
+    padding: 8em 8em;
+  }
+}
+@media (min-width: 820px) {
+  .last-grid-item {
+    grid-column: 2/3;
+  }
+}
+@media (min-width: 1150px) {
+  .last-grid-item {
+    grid-column: unset;
+  }
+}
+.section-three-container {
+  max-width: 90%;
+  margin: 0 auto;
+  padding-top: 4em;
+}
+
+.section-three-title {
+  opacity: 0.8;
+  position: relative;
+  font-weight: 500;
+  font-size: 1.6rem;
+}
+
+.section-three-title::after {
+  content: "";
+  width: 70px;
+  height: 5px;
+  background-color: #DA6F1A;
+  position: absolute;
+  left: 0;
+  top: 50px;
+}
+
+.three-image-wrap {
+  padding: 8em 0;
+  background-image: url("https://i.imgur.com/5KkKbPD.jpg");
+  background-size: cover;
+}
+
+.image-content-wrap {
+  margin-left: 1.5em;
+}
+
+.touch-title {
+  margin-bottom: 0.75em;
+}
+
+.white-btn {
+  display: block;
+  width: -moz-fit-content;
+  width: fit-content;
+  background-color: #fff;
+  padding: 1em 2em;
+}
+
+.white-btn:hover {
+  opacity: 0.7;
+}
+
+.social-icon-div {
+  padding: 3em 0;
+  border-bottom: 1px solid black;
+}
+
+.social-icons + .social-icons {
+  display: inline-block;
+  margin-left: 1em;
+}
+
+.social-icons:hover {
+  opacity: 0.8;
+}
+
+@media (min-width: 1400px) {
+  .image-content-wrap {
+    margin-left: 10em;
+  }
+}
+@media (min-width: 1600px) {
+  html {
+    font-size: 20px;
+  }
+}
+
+/*# sourceMappingURL=main.css.map */
